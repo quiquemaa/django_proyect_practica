@@ -4,11 +4,10 @@
 {% block content %}
 <h1>PROYECTOS</h1>
 
-{% for proyect in proyectos %}
-
-<h1>- {{proyect.titulo}}</h1>
-
-{% endfor %}
-
+<div class="proyectos-lista">
+  {% for proyect in proyectos %}
+    <span class="proyecto-nombre">{{ proyect.titulo }}</span>
+  {% endfor %}
+</div>
 
 {% endblock %}
