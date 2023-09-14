@@ -1,12 +1,11 @@
 .proyectos-lista {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
 }
 
 .proyecto-nombre {
   background-color: #f0f0f0;
   padding: 5px 10px;
   border: 1px solid #ccc;
-  margin-right: 10px; /* Ajusta el margen derecho para reducir el espacio entre elementos */
+  margin-right: 10px; /* Ajusta el margen derecho para un espacio mínimo entre elementos */
 }

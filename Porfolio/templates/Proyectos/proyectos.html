@@ -1,12 +1,15 @@
 {% extends 'layouts/base.html' %}
 
-
 {% block content %}
 <h1>PROYECTOS</h1>
 
 <div class="proyectos-lista">
   {% for proyect in proyectos %}
-    <span class="proyecto-nombre">{{ proyect.titulo }}</span>
+    <div class="proyecto">
+      <h2 class="proyecto-titulo">{{ proyect.titulo }}</h2>
+      <img src="{{ proyect.imagen.url }}" alt="{{ proyect.titulo }}">
+      <p class="proyecto-descripcion">{{ proyect.descripcion }}</p>
+    </div>
   {% endfor %}
 </div>
 
