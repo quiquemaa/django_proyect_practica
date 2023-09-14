@@ -1,7 +1,9 @@
-
-
+{% load static %}
 <!DOCTYPE html>
 <html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/main.css' %}">
+</head>
 <body>
     <header>
         <nav>
@@ -13,6 +15,7 @@
     </header>
 </body>
 </html>
+
 
 {% block content %}
 {% endblock %}
